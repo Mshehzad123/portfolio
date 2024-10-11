@@ -8,7 +8,6 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import {illustration, greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
-
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
   if (!greeting.displayGreeting) {
@@ -51,7 +50,7 @@ export default function Greeting() {
               </div>
             </div>
           </div>
-          <div className="greeting-image-div">
+          <div className="greeting-image-div" >
             {illustration.animated ? (
               <DisplayLottie animationData={landingPerson} />
             ) : (
